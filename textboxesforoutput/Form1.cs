@@ -23,7 +23,8 @@ namespace textboxesforoutput
 
             decInput = Convert.ToDecimal(txtboxInput.Text);
 
-            txtboxoutput.Text = Convert.ToString(decInput);
+            txtboxoutput.Text = decInput.ToString();
+            txtCurrency.Text = decInput.ToString("c");
         }
     }
 }

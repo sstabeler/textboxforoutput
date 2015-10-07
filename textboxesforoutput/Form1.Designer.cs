@@ -31,6 +31,7 @@
             this.txtboxInput = new System.Windows.Forms.TextBox();
             this.btnFormat = new System.Windows.Forms.Button();
             this.txtboxoutput = new System.Windows.Forms.TextBox();
+            this.txtCurrency = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtboxInput
@@ -58,11 +59,20 @@
             this.txtboxoutput.Size = new System.Drawing.Size(206, 20);
             this.txtboxoutput.TabIndex = 2;
             // 
+            // txtCurrency
+            // 
+            this.txtCurrency.Location = new System.Drawing.Point(687, 203);
+            this.txtCurrency.Name = "txtCurrency";
+            this.txtCurrency.ReadOnly = true;
+            this.txtCurrency.Size = new System.Drawing.Size(220, 20);
+            this.txtCurrency.TabIndex = 3;
+            // 
             // textboxesforoutput
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(992, 591);
+            this.Controls.Add(this.txtCurrency);
             this.Controls.Add(this.txtboxoutput);
             this.Controls.Add(this.btnFormat);
             this.Controls.Add(this.txtboxInput);
@@ -78,6 +88,7 @@
         private System.Windows.Forms.TextBox txtboxInput;
         private System.Windows.Forms.Button btnFormat;
         private System.Windows.Forms.TextBox txtboxoutput;
+        private System.Windows.Forms.TextBox txtCurrency;
     }
 }
 
