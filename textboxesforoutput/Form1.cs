@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
+
 
 namespace textboxesforoutput
 {
@@ -24,7 +26,9 @@ namespace textboxesforoutput
             decInput = Convert.ToDecimal(txtboxInput.Text);
 
             txtboxoutput.Text = decInput.ToString();
-            txtCurrency.Text = decInput.ToString("c");
+
+            txtCurrency.Text = decInput.ToString("c", System.Globalization.CultureInfo.CurrentUICulture);
+
         }
     }
 }
